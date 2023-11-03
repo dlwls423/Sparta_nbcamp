@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EntityStateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-02T11:18:46" hostname="DESKTOP-3SLBQL1" time="4.648">
+  <properties/>
+  <testcase name="merge() : 수정" classname="EntityStateTest" time="4.648"/>
+  <system-out><![CDATA[Hibernate: 
+    select
+        m1_0.id,
+        m1_0.contents,
+        m1_0.username 
+    from
+        memo m1_0 
+    where
+        m1_0.id=?
+memo.getId() = 3
+memo.getUsername() = merge()
+memo.getContents() = merge() 저장
+em.contains(memo) = true
+detach() 호출
+em.contains(memo) = false
+준영속 memo 값 수정
+
+ merge() 호출
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.contents,
+        m1_0.username 
+    from
+        memo m1_0 
+    where
+        m1_0.id=?
+mergedMemo.getContents() = merge() 수정
+em.contains(memo) = false
+em.contains(mergedMemo) = true
+트랜잭션 commit 전
+Hibernate: 
+    /* update
+        com.sparta.entity.Memo */ update memo 
+    set
+        contents=?,
+        username=? 
+    where
+        id=?
+트랜잭션 commit 후
+]]></system-out>
+  <system-err><![CDATA[Nov 02, 2023 8:18:47 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: memo]
+Nov 02, 2023 8:18:47 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.1.7.Final
+Nov 02, 2023 8:18:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+Nov 02, 2023 8:18:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+Nov 02, 2023 8:18:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/memo]
+Nov 02, 2023 8:18:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Nov 02, 2023 8:18:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Nov 02, 2023 8:18:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH10001115: Connection pool size: 20 (min=1)
+Nov 02, 2023 8:18:49 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl logSelectedDialect
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+Nov 02, 2023 8:18:50 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650aa077] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Nov 02, 2023 8:18:50 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Nov 02, 2023 8:18:51 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/memo]
+]]></system-err>
+</testsuite>
