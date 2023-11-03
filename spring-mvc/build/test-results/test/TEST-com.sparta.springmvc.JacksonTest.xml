@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sparta.springmvc.JacksonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-01T06:36:24" hostname="DESKTOP-3SLBQL1" time="0.753">
+  <properties/>
+  <testcase name="JSON To Object : 기본 생성자 &amp; (get OR set) Method 필요" classname="com.sparta.springmvc.JacksonTest" time="0.753"/>
+  <system-out><![CDATA[star.getName() = Robbie
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sparta.springprepare.calculator.CalculatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-01T01:41:33" hostname="DESKTOP-3SLBQL1" time="0.012">
+  <properties/>
+  <testcase name="더하기 테스트" classname="com.sparta.springprepare.calculator.CalculatorTest" time="0.009"/>
+  <testcase name="나누기 테스트" classname="com.sparta.springprepare.calculator.CalculatorTest" time="0.002"/>
+  <system-out><![CDATA[result = 10.0
+result = 4.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
