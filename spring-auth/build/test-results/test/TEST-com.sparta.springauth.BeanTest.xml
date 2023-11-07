@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sparta.springauth.BeanTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-07T01:49:29" hostname="DESKTOP-3SLBQL1" time="3.332">
+  <properties/>
+  <testcase name="테스트" classname="com.sparta.springauth.BeanTest" time="3.332"/>
+  <system-out><![CDATA[10:49:24.060 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.sparta.springauth.BeanTest]: BeanTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:49:24.397 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.sparta.springauth.SpringAuthApplication for test class com.sparta.springauth.BeanTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2023-11-07T10:49:25.782+09:00  INFO 21260 --- [    Test worker] com.sparta.springauth.BeanTest           : Starting BeanTest using Java 17.0.8 with PID 21260 (started by leeye in C:\Users\leeye\sparta\spring-auth)
+2023-11-07T10:49:25.787+09:00  INFO 21260 --- [    Test worker] com.sparta.springauth.BeanTest           : No active profile set, falling back to 1 default profile: "default"
+2023-11-07T10:49:29.853+09:00  INFO 21260 --- [    Test worker] com.sparta.springauth.BeanTest           : Started BeanTest in 4.842 seconds (process running for 10.248)
+피자를 먹습니다.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
