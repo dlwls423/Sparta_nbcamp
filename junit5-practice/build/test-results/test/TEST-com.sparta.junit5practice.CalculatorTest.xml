@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sparta.junit5practice.CalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-28T06:00:41" hostname="DESKTOP-3SLBQL1" time="0.04">
+  <properties/>
+  <testcase name="계산기 연산 실패 테스트 : 연산자가 잘못됐을 경우" classname="com.sparta.junit5practice.CalculatorTest" time="0.04"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
